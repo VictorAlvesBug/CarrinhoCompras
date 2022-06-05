@@ -1,0 +1,125 @@
+﻿.grid-produtos {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.item-produto-container {
+	padding: 5px;
+	width: calc(100% / 1);
+}
+
+.item-produto-content {
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	padding: 5px 10px;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.item-produto-selecao-container {
+	display: flex;
+	justify-content: space-around;
+}
+
+.item-produto-selecao-remover,
+.item-produto-selecao-adicionar,
+.item-produto-selecao-qtde {
+	border: 1px solid #ccc;
+	font-size: 16px;
+	font-weight: bold;
+	text-align: center;
+	user-select: none;
+}
+
+.item-produto-selecao-remover {
+	border: 1px solid #ccc;
+	border-right: 1px solid transparent;
+	border-top-left-radius: 2px;
+	border-bottom-left-radius: 2px;
+}
+
+.item-produto-selecao-adicionar {
+	border: 1px solid #ccc;
+	border-left: 1px solid transparent;
+	border-top-right-radius: 2px;
+	border-bottom-right-radius: 2px;
+}
+
+.item-produto-selecao-remover,
+.item-produto-selecao-adicionar {
+	width: 20px;
+	opacity: 0.4;
+}
+
+	.item-produto-selecao-remover.btn-ativado,
+	.item-produto-selecao-adicionar.btn-ativado {
+		cursor: pointer;
+		opacity: 1;
+	}
+
+		.item-produto-selecao-remover.btn-ativado:hover,
+		.item-produto-selecao-adicionar.btn-ativado:hover {
+			background-color: #eee;
+		}
+
+.item-produto-selecao-qtde {
+	width: 30px;
+	border-left: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+}
+
+.item-produto-subtotal {
+	margin: auto 10px;
+}
+
+.carrinho-preco-total-sem-desconto {
+	margin: auto 10px;
+	text-decoration: line-through;
+}
+
+.carrinho-preco-total-com-desconto {
+	margin: auto 10px;
+	font-weight: bold;
+	font-size: 16px;
+}
+
+.btn-finalizar-compra {
+	width: 70px;
+	text-align: center;
+	font-weight: bold;
+	border: 1px solid #ccc;
+	border-radius: 2px;
+	user-select: none;
+	opacity: 0.4;
+}
+
+	.btn-finalizar-compra.btn-ativado {
+		cursor: pointer;
+		opacity: 1;
+	}
+
+		.btn-finalizar-compra.btn-ativado:hover {
+			background-color: #eee;
+		}
+
+.calculo-descontos-carrinho {
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	padding: 5px;
+	margin: 5px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.grid-descontos {
+	width: 100%;
+	padding: 5px 10px;
+}
+
+.item-desconto-container {
+	display: flex;
+	justify-content:space-between;
+}
